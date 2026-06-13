@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logo SOCAMETT — Impression</title>
+<style>
+  :root{
+    --blue:#0B3FA4;
+    --ink:#1a2230;
+    --muted:#5b6573;
+    --line:#e6e9ef;
+    --bg:#f5f7fb;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.55;
+  }
+  .wrap{max-width:1000px;margin:0 auto;padding:32px 20px 80px}
+  .back{display:inline-block;margin-bottom:18px;color:var(--blue);text-decoration:none;font-weight:600;font-size:14px}
+  .back:hover{text-decoration:underline}
+  header{text-align:center;margin-bottom:40px}
+  header h1{margin:0 0 6px;font-size:32px;letter-spacing:-.02em}
+  header p{margin:0;color:var(--muted)}
+  h2{font-size:20px;margin:40px 0 16px;letter-spacing:-.01em}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+  .preview{height:140px;display:flex;align-items:center;justify-content:center;padding:14px;background:#fff}
+  .preview img{max-width:100%;max-height:112px;height:auto}
+  .meta{padding:14px 16px;border-top:1px solid var(--line);flex:1 1 auto}
+  .meta .name{font-weight:600;font-size:14px}
+  .meta .sub{color:var(--muted);font-size:12.5px;margin-top:2px}
+  .dl{display:block;text-align:center;text-decoration:none;color:var(--blue);font-weight:600;font-size:13.5px;padding:12px;border-top:1px solid var(--line)}
+  .dl:hover{background:#f0f4ff}
+  .color{display:flex;gap:20px;align-items:stretch;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;flex-wrap:wrap}
+  .swatch{width:160px;min-height:140px;flex:0 0 auto;border-radius:10px;background:var(--blue);
+    display:flex;align-items:flex-end;justify-content:center;color:#fff;font-weight:700;font-size:14px;padding:10px}
+  table{border-collapse:collapse;font-size:14px;min-width:260px}
+  td{padding:7px 14px 7px 0;border-bottom:1px solid var(--line);vertical-align:top}
+  td.k{color:var(--muted);white-space:nowrap}
+  td.v{font-weight:600;font-variant-numeric:tabular-nums}
+  .note{background:#fff8e6;border:1px solid #f3e3b3;border-radius:12px;padding:14px 16px;font-size:14px;margin-top:16px}
+  ul{padding-left:20px}
+  li{margin:7px 0}
+  code{background:#eef1f6;border-radius:5px;padding:1px 6px;font-size:.92em}
+  footer{margin-top:56px;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="index.html">← Tous les logos</a>
+
+  <header>
+    <h1>Impression</h1>
+    <p>Fichiers vectoriels et couleur de marque, prêts pour l'imprimeur.</p>
+  </header>
+
+  <h2>Fichiers vectoriels</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="preview"><img src="logos/socamett-logo_512_white.png" alt="PDF RVB"></div>
+      <div class="meta"><div class="name">PDF — RVB</div><div class="sub">Universel · l'imprimeur convertit avec son profil</div></div>
+      <a class="dl" href="print/socamett-logo.pdf" download>Télécharger .pdf</a>
+    </div>
+    <div class="card">
+      <div class="preview"><img src="logos/socamett-logo_512_white.png" alt="PDF CMJN"></div>
+      <div class="meta"><div class="name">PDF — CMJN</div><div class="sub">Prêt quadri</div></div>
+      <a class="dl" href="print/socamett-logo-cmyk.pdf" download>Télécharger .pdf</a>
+    </div>
+    <div class="card">
+      <div class="preview"><img src="logos/socamett-logo_512_white.png" alt="EPS"></div>
+      <div class="meta"><div class="name">EPS</div><div class="sub">Vectoriel (flux legacy)</div></div>
+      <a class="dl" href="print/socamett-logo.eps" download>Télécharger .eps</a>
+    </div>
+  </div>
+
+  <h2>Couleur de marque — bleu</h2>
+  <div class="color">
+    <div class="swatch">#0B3FA4</div>
+    <table>
+      <tr><td class="k">HEX</td><td class="v">#0B3FA4</td></tr>
+      <tr><td class="k">RVB</td><td class="v">11 / 63 / 164</td></tr>
+      <tr><td class="k">CMJN (build conseillé)</td><td class="v">C100 M72 J0 N5</td></tr>
+      <tr><td class="k">CMJN (dans le PDF fourni)</td><td class="v">≈ C95 M77 J0 N1</td></tr>
+      <tr><td class="k">Pantone</td><td class="v">286 C — ou 293 C (le plus proche)</td></tr>
+    </table>
+  </div>
+  <div class="note">
+    ⚠️ Les correspondances Pantone sont des approximations écran. <strong>Validez sur
+    un nuancier Pantone physique</strong> avant un tirage important. Pour une couleur
+    parfaitement constante (cartes, enseignes, web), imprimez le bleu en
+    <strong>ton direct Pantone</strong> plutôt qu'en quadri.
+  </div>
+
+  <h2>Conseils</h2>
+  <ul>
+    <li>Privilégiez le <strong>vectoriel</strong> (PDF / EPS) : net à n'importe quelle taille.</li>
+    <li>Les éléments <strong>blancs</strong> (texte, anneau, emblème) sont des réserves
+      (blanc du papier) sur fond blanc, ou du <strong>blanc d'impression</strong> si la
+      carte est sur support coloré/foncé. Le fond du logo est transparent.</li>
+    <li>Pas de <strong>fond perdu</strong> nécessaire (le logo ne touche pas le bord) ;
+      gardez une marge de sécurité autour de l'ovale dans la maquette.</li>
+    <li>Pour du raster, visez <strong>300 DPI</strong> à la taille finale — le PNG
+      <code>4260&nbsp;px</code> couvre largement une carte de visite.</li>
+  </ul>
+
+  <footer>
+    Logo SOCAMETT · fichiers d'impression — voir aussi <a href="index.html">la page de téléchargement</a>.
+  </footer>
+
+</div>
+</body>
+</html>
